@@ -1,0 +1,27 @@
+td{
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+}
+table{
+    background-color: aqua;
+    
+    width: 100%;
+    height: 600px;;
+}
+table, th, td {
+    border: 3px solid black;
+    border-collapse:collapse ;
+}
+tr:nth-child(1){
+    background-color: red;
+}
+td:nth-child(1){
+    background-color: blueviolet;
+}
+tr:nth-child(1) td:nth-child(1){
+    background-color: greenyellow;
+}
+h1{
+    text-decoration: underline;
+}
