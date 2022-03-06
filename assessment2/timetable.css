@@ -14,13 +14,13 @@ table, th, td {
     border-collapse:collapse ;
 }
 tr:nth-child(1){
-    background-color: red;
+    background-color: rgb(32, 151, 8);
 }
 td:nth-child(1){
-    background-color: blueviolet;
+    background-color: rgb(10, 161, 98);
 }
 tr:nth-child(1) td:nth-child(1){
-    background-color: greenyellow;
+    background-color: rgb(2, 54, 9);
 }
 h1{
     text-decoration: underline;
