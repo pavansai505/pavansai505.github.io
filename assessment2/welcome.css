@@ -17,9 +17,13 @@ body{
 .main1{
     background-color: rgb(217, 252, 193);
 }
-.studentimg{
+a{
     margin-left: 1100px;
     margin-top: 10px;
+
+}
+.studentimg{
+    
     border-radius: 50%;
     border: 2px solid cyan;
 }
