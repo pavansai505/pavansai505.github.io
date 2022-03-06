@@ -3,12 +3,14 @@ body{
     padding: 10px;
     height:690px;
 }
-.logo{
-    width: 100%;
+
+
+.find{
+    width:100%;
+    display: flex;
     background-color: rgb(141,243,73);
     border: 2px solid black;
-    height: 80px;
-    display: flex;
+    
 }
 
 .logoimg{
@@ -17,9 +19,12 @@ body{
 .main1{
     background-color: rgb(217, 252, 193);
 }
-.studentimg{
+a{
     margin-left: 1100px;
-    margin-top: 10px;
+    margin-top: 7px;
+    
+}
+.studentimg{
     border-radius: 50%;
     border: 2px solid cyan;
 }
@@ -36,5 +41,5 @@ body{
     margin-left: 400px;
     font-weight: bolder;
     font-size: 100px;
-    
 }
+
