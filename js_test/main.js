@@ -7,6 +7,30 @@ var arr={
     "node":["comments:"]
 };
 console.log(arr)
+var extra_elements=["HTML","CSS"]
+function extras(){
+    var menu_list=document.getElementById("extras_data");
+    console.log(extra_elements)
+    var mapped_data_for_extras=extra_elements.map(function(data_for_extras){
+        
+        return `<li><a class="dropdown-item" href="#">${data_for_extras}</a></li>`
+    })
+    console.log(mapped_data_for_extras)
+    var final_list_for_extras=mapped_data_for_extras.reduce(function(oldone,newone){
+        return oldone+" "+newone
+    }," ")
+    console.log(final_list_for_extras)
+    menu_list.innerHTML=final_list_for_extras;
+}
+extras()
+function add_extras(){
+    var new_extra=document.getElementById("extra_data").value;
+    extra_elements.push(new_extra);
+    document.getElementById("extra_data").value="";
+    
+    console.log(extra_elements)
+    extras()
+}
 
 function display_data(){
     Object.keys(arr).forEach(function(item){

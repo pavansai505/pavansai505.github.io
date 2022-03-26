@@ -26,19 +26,44 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="logo.png" alt="" width="120" height="60" class="d-inline-block align-text-top">
-          </a>
-          <p class="navbar-nav me-auto " id="username">name</p>
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="" width="120" height="60" class="d-inline-block align-text-top">
+              </a>
+          <a class="navbar-brand" href="#" id="username">Name</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Extra Activities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="extras_data">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            
+              <input class="form-control me-2" style="width: 15vw;" placeholder="Add activity" aria-label="Search" id="extra_data">
+              <button class="btn btn-outline-success" onclick="add_extras()">ADD</button>
+            
+          </div>
         </div>
-    </nav>
+      </nav>
     <div class="container mt-5 ">
         <div class="row">
           <div class="col-3 ">
             <div class="card" style="width: 18rem;">
-                <img src="mongo.png" class="card-img-top" alt="...">
+                <img src="mongo.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -56,7 +81,7 @@
           </div>
           <div class="col-3 ">
             <div class="card" style="width: 18rem;">
-                <img src="expressjs.png" class="card-img-top" alt="...">
+                <img src="expressjs.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -74,7 +99,7 @@
           </div>
           <div class="col-3 ">
             <div class="card" style="width: 18rem;">
-                <img src="reactjs.png" class="card-img-top" alt="...">
+                <img src="reactjs.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -92,7 +117,7 @@
           </div>
           <div class="col-3 ">
             <div class="card" style="width: 18rem;">
-                <img src="node.png" class="card-img-top" alt="...">
+                <img src="node.png" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -113,5 +138,7 @@
 
 
     <script src="main.js"></script>
+    <script src="main2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
